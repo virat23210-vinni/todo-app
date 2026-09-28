@@ -5,9 +5,8 @@ SparkTrack is a two-application React and Express project for private task manag
 ## Structure
 
 ```
-teen-tracker/
-├── frontend/    # Vite + React client
-├── backend/     # Express REST API (MVC-style)
+├── frontend-todo/    # Vite + React client
+├── backend-todo/     # Express REST API (MVC-style)
 └── database/schema.sql
 ```
 
@@ -16,12 +15,12 @@ The backend flows from routes → controllers → services → repository/Supaba
 ## Setup
 
 1. Create a Supabase project. In its SQL Editor, run `database/schema.sql`.
-2. Copy `backend/.env.example` to `backend/.env`, then provide the project URL, **service role** key, and a long random `JWT_SECRET`. Keep this file private.
-3. Copy `frontend/.env.example` to `frontend/.env`. `VITE_API_URL` is safe in the browser. The frontend deliberately has no Supabase credential.
+2. Copy `backend-todo/.env.example` to `backend-todo/.env`, then provide the project URL, **service role** key, and a long random `JWT_SECRET`. Keep this file private.
+3. Copy `frontend-todo/.env.example` to `frontend-todo/.env`. `VITE_API_URL` is safe in the browser. The frontend deliberately has no Supabase credential.
 4. Start the API:
 
 ```bash
-cd backend
+cd backend-todo
 npm install
 npm run dev
 ```
@@ -29,7 +28,7 @@ npm run dev
 5. In a second terminal start the web app:
 
 ```bash
-cd frontend
+cd frontend-todo
 npm install
 npm run dev
 ```
