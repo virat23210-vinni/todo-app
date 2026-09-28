@@ -1,0 +1,1 @@
+import{Card}from'../components/UI';export default function Placeholder({title}){return <><header><p className="eyebrow">COMING TOGETHER</p><h1>{title}</h1></header><Card><p className="muted">This space is ready for your data. Add it through the API while the dedicated management view is being expanded.</p></Card></>}
